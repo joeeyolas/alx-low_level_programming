@@ -1,14 +1,21 @@
-echo '#include <stdio.h>
-#include <unistd.h>
-
+#include <stdio.h>
 /**
- * main - prints exactly "and that piece of art is useful"
- * - Dora Korpar, 2015-10-19",
- * followed by a new line, to the standard error.
+ * main - prints all the numbers of base 16 in lowercase,
+ * followed by a new line
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
-return (1);
-}'>101-quote.c
+int n;
+char ch;
+ for (n = 48; n < 58; n++)
+ {
+   putchar(n);
+ }
+  for (ch = 'a'; ch <= 'f'; ch++)
+	{
+		putchar(ch);
+	}
+	putchar('\n');
+	return (0);
+}
