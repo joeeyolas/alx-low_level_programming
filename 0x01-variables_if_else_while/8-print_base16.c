@@ -1,13 +1,18 @@
-#include <unistd.h>
-
-/**
- *  * main - prints exactly "and that piece of art is useful"
- *   * - Dora Korpar, 2015-10-19",
- *    * followed by a new line, to the standard error.
- *     * Return: Always 0 (Success)
- *      */
 int main(void)
 {
-	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
-	return (1);
-} '>101-quote.c
+		int n;
+
+			for (n = 0 ; n < 16 ; n++)
+					{
+								if (n < 10)
+											{
+															putchar('0' + n);
+																	}
+										else
+													{
+																	putchar(87 + n);
+																			}
+											}
+				putchar('\n');
+					return (0);
+}
