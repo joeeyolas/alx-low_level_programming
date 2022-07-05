@@ -1,20 +1,23 @@
+/*
+ * *File: alphabet ten times
+ * *Auth: Dr Marcus IMAGWE
+ * */
+
 #include "main.h"
 
 /**
- * * print_alphabet_x10 -> prints the lowercase alphabets
- * */
+ *  *print_alphabet_x10 - print alphabet 10 times, in lowercase.
+ *  */
 
 void print_alphabet_x10(void)
 {
-		int j;
-			int x;
+		int coun = 0;
+			char alpha;
 
-				for (x = 0; x < 10; x++)
+				while (coun++ <= 9)
 						{
-									for (j = 'a'; j <= 'z'; j++)
-												{
-																_putchar(j);
-																		}
+									for (alpha = 97; alpha <= 122; alpha++)
+													_putchar(alpha);
 											_putchar('\n');
 												}
 }
