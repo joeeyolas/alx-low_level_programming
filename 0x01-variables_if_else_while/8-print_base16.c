@@ -1,18 +1,22 @@
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-		int n;
+int c;
 
-			for (n = 0 ; n < 16 ; n++)
-					{
-								if (n < 10)
-											{
-															putchar('0' + n);
-																	}
-										else
-													{
-																	putchar(87 + n);
-																			}
-											}
-				putchar('\n');
-					return (0);
+for (c = '0'; c <= '9'; c++)
+{
+putchar(c);
+}
+for (c = 'a'; c <= 'f'; c++)
+{
+putchar(c);
+}
+putchar('\n');
+return (0);
 }
