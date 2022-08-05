@@ -1,1 +1,1 @@
-readme in my C repo
+readme in dir
